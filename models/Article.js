@@ -15,6 +15,11 @@ let ArticleSchema = new Schema({
         required: true
     },
 
+    image: {
+        type: String,
+        required: true
+    },
+
     note: {
         type: Schema.Types.ObjectId,
         ref: "Note"
