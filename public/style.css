@@ -14,13 +14,6 @@
         background-color: rgb(47, 9, 218);
     }
 
-    #wrapper {
-        width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5%;
-    }
-
     #articles {
         display: inline-block;
         overflow: auto;
@@ -31,13 +24,27 @@
         font-weight: 200;
     }
 
+    #bodyinput {
+        color: black;
+        font-family: myriad-arabic, sans-serif;
+        font-weight: 200;
+        border: none;
+    }
+
+    #bodyinput:active {
+        background-color: black;
+    }
+
     #notes {
         float: right;
         width: 30%;
         background-color: #4c4c4c;
         padding: 5px;
         box-shadow: 2px 2px 2px 8px #fff;
+    }
 
+    #text {
+        background-color: red;
     }
 
     #titleinput {
@@ -47,22 +54,12 @@
         border: 0.5 solid grey;
     }
 
-    #bodyinput:active {
-        background-color: black;
+    #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
     }
-
-    #bodyinput {
-        color: black;
-        font-family: myriad-arabic, sans-serif;
-        font-weight: 200;
-        border: none;
-    }
-
-    #text {
-        background-color: red;
-    }
-
-    
 
     textarea,
     input {

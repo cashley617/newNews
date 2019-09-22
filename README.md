@@ -1,6 +1,6 @@
 # newNews
 
-News, News, Ready all about it!
+News, News, Read all about it!
 
 This app scrapes news articles, keeping you up to date on all the latest headlines. 
 
@@ -28,6 +28,7 @@ newNews is built from:
 * Express
 * Cheerio 
 * Axios 
+* Deployed to Heroku
 * And a lot of work
 
 
