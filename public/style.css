@@ -1,0 +1,128 @@
+    body {
+        background-color: black;
+        font-family: myriad-arabic, sans-serif;
+        }
+    p {
+        background-color: #fff;
+        text-align: center;
+        border: 1px solid #fff;
+        padding: 2px;
+        box-shadow: 2px 2px 2px 2px #fff;
+    }
+
+    p:active {
+        background-color: rgb(47, 9, 218);
+    }
+
+    #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+    }
+
+    #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+        background-color: #4c4c4c;
+        padding: 6px;
+        font-weight: 200;
+    }
+
+    #notes {
+        float: right;
+        width: 30%;
+        background-color: #4c4c4c;
+        padding: 5px;
+        box-shadow: 2px 2px 2px 8px #fff;
+
+    }
+
+    #titleinput {
+        background-color: #f2f2f2;
+        font-family: myriad-arabic, sans-serif;
+        font-weight: 400;
+        border: 0.5 solid grey;
+    }
+
+    #bodyinput:active {
+        background-color: black;
+    }
+
+    #bodyinput {
+        color: black;
+        font-family: myriad-arabic, sans-serif;
+        font-weight: 200;
+        border: none;
+    }
+
+    #text {
+        background-color: red;
+    }
+
+    
+
+    textarea,
+    input {
+        display: block;
+        width: 100%;
+        background-color: rgb(249, 248, 247);
+    }
+
+    input {
+        height: 36px;
+        font-size: 24px;
+    }
+
+    textarea {
+        height: 200px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    #h1Div {
+        border-radius: 25px;
+        text-align: center;
+        font-family: myriad-arabic, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        background-color: #fff;
+        box-shadow: 3px;
+        border: 1px solid grey;
+        padding: 5px;
+        box-shadow: 5px 2px 8px 2px #888888;
+        width: 25%;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: myriad-arabic, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: 10;
+        color: white;
+    }
+
+    button {
+        background-image: linear-gradient(to bottom, #f2f5f4, #c1c4c4);
+        border-color: #c1c4c4;
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+        width: 112px;
+        transition: 0.1s;
+        color: black;
+        border-radius: 25px;
+    }
+
+    button:hover {
+        background-image: linear-gradient(to bottom, #f2f5f4, #c1c4c4);
+        color: rgb(47, 9, 218);
+        border-color: rgb(47, 9, 218);
+        box-shadow: 2px 2px 2px 2px;
+        transform: scale(1.1);
+    }
+        
