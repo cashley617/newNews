@@ -5,6 +5,22 @@ $.getJSON('/articles', function(data) {
     }
 }); 
 
+
+    
+$(document).on("click", '#scrape', () => {
+
+    // AJAX call 
+    $.ajax({
+        method: "GET",
+        url: "/scrape"
+    })
+        // note section 
+        .then(function (data) {
+            console.log(data);
+        });
+});
+
+
 // Click on <p/> tag 
 $(document).on("click", "p", function() {
     $('#notes').empty(); 

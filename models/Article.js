@@ -10,15 +10,15 @@ let ArticleSchema = new Schema({
         required: true
     },
 
-    link: { 
-        type: String,
-        required: true
-    },
+    // link: { 
+    //     type: String,
+    //     required: true
+    // },
 
-    image: {
-        type: String,
-        required: true
-    },
+    // image: {
+    //     type: String,
+    //     required: true
+    // },
 
     note: {
         type: Schema.Types.ObjectId,
