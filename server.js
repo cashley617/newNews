@@ -37,36 +37,6 @@ mongoose.connect("mongodb://localhost/unit18PopulaterNew", { useNewUrlParser: tr
 
 // Routes
 
-// GET route to scrape 
-// app.get("/scrape", function (req, res) {
-//     axios.get("http://www.echojs.com/").then(function (response) {
-//         var $ = cheerio.load(response.data);
-
-//         // Get h2s
-//         $("article h2").each(function (i, element) {
-//             var result = {};
-//             result.title = $(this)
-//                 .children("a")
-//                 .text();
-//             result.link = $(this)
-//                 .children("a")
-//                 .attr("href");
-
-//             // Create a new Article
-//             db.Article.create(result)
-//                 .then(function (dbArticle) {
-//                 })
-//                 .catch(function (err) {
-//                     console.log(err);
-//                 });
-//         });
-
-//         // Send message
-//         res.send("Scrape Complete");
-//     });
-// });
-
-
 // Version 1 for Al Jazeera
 app.get("/scrape", function (req, res) {
     // First, we grab the body of the html with axios
@@ -75,25 +45,27 @@ app.get("/scrape", function (req, res) {
       // Then, we load that into cheerio and save it to $ for a shorthand selector
       let $ = cheerio.load(response.data);
 
-
-        // $(".story-information").each((i, element) => {
-        //     // console.log()
-        //   console.log($(element).find("a").attr("href"));
-        // });
         $(".story-information").each((i, element) => {
             // Save result object 
             let result = {}; 
-
 
             // // Add the text 
             result.title = $(element) 
                 .find("a")
                 // .attr("href");
 
-            result.link = $(element)
-                .find("a")
-                .children($(".greta"))
-                .text()
+            // result.link = $(element)
+            //     .find("time")
+            //     .children($(".greta"))
+            //     .text()
+
+            // console.log($(element).find("p").attr("time"));
+            console.log(
+              $(element)
+                .find("time")
+                // .attr("time")
+            );
+
 
             // console.log($(element).find("a").attr("href"));
             // console.log(
